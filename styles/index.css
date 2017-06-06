@@ -1,0 +1,144 @@
+/*banner*/
+#banner .banner_img {
+ width: 960px;
+ height: 375px;
+ position: relative;
+ overflow: hidden;
+}
+
+#banner .banner_img ul {
+ position: absolute;
+ left: 0;
+ top: 0;
+}
+
+#banner .banner_img ul li {
+ float: left;
+}
+
+#banner .banner_img em {
+ display: block;
+ width: 100%;
+ height: 40px;
+ line-height: 40px;
+ text-align: center;
+ background: url(../images/solid_bg.png);
+ position: absolute;
+ left: 0;
+ bottom: 0;
+}
+
+#banner .banner_img p {
+ position: absolute;
+ right: 30px;
+ bottom: 10px;
+}
+
+#banner .banner_img p span {
+ display: inline-block;
+ width: 13px;
+ height: 13px;
+ background: #CCC;
+ border-radius: 50%;
+ margin-left: 5px;
+ cursor: pointer;
+}
+
+#banner .banner_img .current {
+ background: #dd2424;
+}
+
+#banner .banner_img a.prev, #banner .banner_img a.next {
+ position: absolute;
+ display: block;
+ width: 41px;
+ height: 59px;
+ filter: alpha(opacity=40);
+ opacity: 0.4;
+ top: 50%;
+ margin-top: -30px;
+ cursor: pointer;
+}
+
+#banner .banner_img a:hover {
+ filter: alpha(opacity=100);
+ opacity: 10;
+}
+
+#banner .banner_img a.prev {
+ left: -45px;
+ background: url(../images/prev.png);
+}
+
+#banner .banner_img a.next {
+ right: -45px;
+ background: url(../images/next.png);
+}
+
+/*end banner*/
+
+
+/*content*/
+.content .bloglist h3, .content .slider .hot_Articles h3, .content .slider .taginfo h3 {
+ color: #56bc8a;
+ font-size: 15px;
+ text-indent: 12px;
+ height: 45px;
+ line-height: 45px;
+ border-bottom: 1px solid #ddd;
+}
+
+.content .bloglist h3 span, .content .slider .hot_Articles h3 span, .content .slider .taginfo h3 span {
+ font-size: 12px;
+ padding-left: 10px;
+}
+
+.content .bloglist {
+ width: 600px;
+ padding: 15px 0;
+}
+
+.content .slider {
+ width: 340px;
+ padding: 15px 0;
+}
+
+.content .slider .hot_Articles {
+ margin-bottom: 20px;
+}
+
+#hotarticle_list, #taginfo_all {
+ padding: 15px 0;
+}
+
+.content .slider .hot_Articles li {
+ height: 30px;
+ line-height: 30px;
+ text-indent: 10px;
+}
+
+.content .slider .hot_Articles li span {
+ padding: 3px 8px;
+ border: 1px solid #ddd;
+ text-align: center;
+ margin-right: 5px;
+}
+
+.content .slider .hot_Articles li span.active {
+ background: #d21a1a;
+ color: #fff;
+}
+
+.content .slider .hot_Articles li a, .content .slider .taginfo a {
+ color: #272323;
+}
+
+.content .slider .taginfo a {
+ color: #fff;
+ display: inline-block;
+ padding: 8px 10px;
+ margin: 5px 10px;
+ border-radius: 5px;
+}
+
+/*end content*/

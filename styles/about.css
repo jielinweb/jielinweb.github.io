@@ -1,0 +1,48 @@
+.content .about_web {
+ width: 590px;
+ padding: 30px 10px 25px 20px;
+ border: 1px solid #ddd;
+}
+
+.content .about_web li {
+ padding-bottom: 40px;
+}
+
+.content .about_web h4 {
+ line-height: 50px;
+ border-bottom: 1px solid #ddd;
+ margin-bottom: 20px;
+}
+
+.content .about_web p {
+ line-height: 30px;
+ text-indent: 20px;
+ font-size: 13px;
+}
+
+.content .about_me {
+ width: 320px;
+ padding: 0px 10px 25px 0;
+}
+
+.content .about_me .ME_photo {
+ width: 310px;
+ height: 276px;
+ padding: 5px;
+ border: 1px solid #ddd;
+ overflow: hidden;
+ cursor: pointer;
+}
+
+.content .about_me  p {
+ line-height: 25px;
+ margin: 15px 0;
+}
+
+.content .about_me li {
+ width: 72px;
+ height: 120px;
+ float: left;
+ margin-right: 32px;
+ overflow: hidden;
+}

@@ -1,0 +1,84 @@
+.allTag_parent {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.allTag_parent .alltag {
+  height: 50px;
+  line-height: 50px;
+  text-indent: 20px;
+}
+
+.allTag_parent .alltag h2 {
+  padding-right: 65px;
+}
+
+.allTag_parent .alltag h2, .allTag_parent .alltag i {
+  font-size: 15px;
+  color: #62b658;
+}
+
+.allTag_parent .alltag .tagsearch input.txt, .allTag_parent .alltag .tagsearch input.btn {
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.allTag_parent .alltag .tagsearch input.txt {
+  width: 190px;
+  height: 30px;
+  line-height: 30px;
+  border-right: none;
+  text-indent: 20px;
+}
+
+.allTag_parent .alltag .tagsearch input.btn {
+  width: 70px;
+  height: 32px;
+  cursor: pointer;
+  margin-left: -5px;
+  border-left: none;
+  background: url(../images/search.png) no-repeat 35px;
+}
+
+.content .Tag_list {
+  padding: 35px 0 40px 20px;
+}
+
+.content .Tag_list li {
+  float: left;
+  width: 200px;
+  height: 160px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 0 68px 20px 0;
+}
+
+.content .Tag_list li img {
+  border: 1px solid #ddd;
+}
+
+.content .Tag_list li img, .content .Tag_list li a {
+  display: block;
+  margin: 0 auto;
+}
+
+.content .Tag_list li h3 {
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.content .Tag_list li a {
+  color: #fff;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  background: #5db75f;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.content .Tag_list li a:hover {
+  background: #4cad4e;
+}

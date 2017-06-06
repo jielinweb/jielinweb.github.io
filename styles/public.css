@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+body,h1,h2,h3,h4,p,ul,form,input {
+  margin:0;
+  padding:0;
+}
+
+em {
+  font-style:normal;
+}
+
+li {
+  list-style:none;
+}
+
+a {
+  text-decoration:none;
+  color: #000;
+}
+
+img {
+  border:none;
+  vertical-align:top;
+  display: block;
+  transition: all 0.5s;
+}
+
+table {
+  border-collapse:collapse;
+}
+
+input,textarea {
+  outline:none;
+  border: none;
+}
+
+body {
+  font-size:12px;
+  font-family:"microsoft yahei";
+}
+
+.clear {
+  zoom:1;
+}
+
+.clear:after {
+  content:'';
+  display:block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.fl {
+  float:left;
+}
+
+.fr {
+  float:right;
+}
+
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:13px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*public*/
+#header, #nav ul, #banner, .content, .alltag, .location, .footer .footer_info {
+  width: 960px;
+  margin: 0 auto;
+}
+/*end public*/
+
+/*公共地址导航*/
+
+.location {
+  height: 42px;
+  line-height: 42px;
+  text-indent: 20px;
+}
+
+.location h3, .content .about_web h4, .culture_info .culture_main h3
+, .culture_info .side_title_1 h3, .culture_info .side_title_2 h3 {
+  color: #56bc8a;
+  font-size: 14px;
+}
+
+/**过度动画*/
+.view .artImg img:hover, .content .video_list  li img:hover, .content .about_me .ME_photo img:hover {
+  -webkit-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -o-transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  transform:scale(1.2);
+}
+
+/*统一a标签hover*/
+.view .article_content a:hover, .content .slider .hot_Articles li a:hover
+, .dipSide a:hover, .side_title_2 li a:hover {
+  color: #56bc8a;
+}
+
+/*header*/
+#header {
+  height: 110px;
+  border: 1px solid #fff;
+}
+
+#header img {
+  float: left;
+  margin: 15px 30px 0 30px;
+}
+
+#header h1 {
+  margin-top: 29px;
+}
+
+#header h1 a {
+  font-size: 20px;
+  font-family: "Simsun";
+}
+
+#header h1 p {
+  font-size: 12px;
+  color: #a29f9f;
+  line-height: 25px;
+}
+
+/**end header/
+
+/*nav*/
+#nav {
+  width: 100%;
+  border-top: 3px solid #56bc8a;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+#nav ul{
+  height: 45px;
+  line-height: 42px;
+}
+
+#nav ul li {
+  float: left;
+  text-align: center;
+  width: 90px;
+  margin-right: 15px;
+}
+
+#nav ul li a {
+  color: #666;
+  display: block;
+  transition: all 0.3s;
+}
+
+#nav ul li a:hover, #nav ul li a.active {
+  background: #56bc8a;
+  color: #fff;
+}
+
+/*end nav*/
+
+/*footer*/
+.footer {
+  width: 100%;
+  background: #242221;
+  border-top: 35px solid #56bc8a;
+}
+
+.footer ul {
+  padding: 25px 10px 15px 10px;
+}
+
+.footer li {
+  float: left;
+  text-align: center;
+  width: 90px;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+}
+
+.footer li a {
+  color: #ccc;
+}
+
+.footer li a.active, #banner .banner_img em {
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer li a:hover, .content .video_title li a.active, .sl_news h4 a:hover {
+  color: #56bc8a;
+}
+
+.footer p {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  border-top: 1px solid #666;
+}
+
+/*end footer*/
+
+
+/*返回顶部*/
+.return_Top {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  cursor: pointer;
+  background: url('../images/TOP.png') no-repeat 5px;
+  display: none;
+}
+
+.return_Top a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*新闻列表部分*/
+.view {
+  padding: 40px 10px 0 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.view .artImg {
+  width: 210px;
+  height: 160px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.view .artImg img {
+  width: 210px;
+  height: 130px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 12px #444;
+}
+
+.view .article_content h2 {
+  font-size: 15px;
+}
+
+.view .article_content .info {
+  text-indent: 20px;
+  line-height: 25px;
+  padding: 6px 0 15px 0;
+}
+
+.view .article_content span {
+  padding-right: 5px;
+}
+
+.view .article_content .ify {
+  position: absolute;
+  right: 20px;
+}
+
+.view .article_content i {
+  padding: 0 3px;
+  cursor: pointer;
+}

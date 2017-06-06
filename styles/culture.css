@@ -1,0 +1,56 @@
+.culture_img {
+    height: 300px;
+    margin: 12px 0 7px 0;
+}
+
+.culture_info .culture_main {
+    width: 650px;
+    padding-bottom: 50px;
+}
+
+.culture_info .culture_main h3, .culture_info .culture_side .side_title_1 h3, .culture_info .culture_side .side_title_2 h3 {
+    line-height: 50px;
+    height: 50px;
+    text-indent: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.culture_info .culture_main .artImg img {
+    height: 200px;
+}
+
+.culture_info .culture_main .view .article_content h2 a {
+    color: #e94007;
+}
+
+.culture_info .culture_main .view .article_content h2 a:hover {
+    color: #56bc8a;
+}
+
+.culture_info .culture_side {
+    width: 300px;
+}
+
+.culture_info .culture_side .side_title_1, .culture_info .culture_side .side_title_2 {
+    margin-bottom: 20px;
+}
+
+.culture_info .culture_side .side_title_1 ul, .culture_info .culture_side .side_title_2 ul {
+    padding: 10px 0;
+}
+
+.culture_info .culture_side .side_title_1 li {
+    float: left;
+    margin: 10px;
+}
+
+.culture_info .culture_side .side_title_1, .culture_info .culture_side .side_title_2 {
+    border: 1px solid #ddd;
+}
+
+.culture_info .culture_side .side_title_2 li {
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 13px;
+}

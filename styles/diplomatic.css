@@ -1,0 +1,59 @@
+.content {
+ padding-bottom: 30px;
+}
+
+.diplomatic_L {
+ width: 640px;
+}
+
+.dipSide {
+ width: 290px;
+}
+
+.diplomatic_L .dip_title, .dipSide .viewpoint h3, .dipSide .recommend h3 {
+ font-size: 15px;
+ font-weight: bold;
+ color: #56bc8a;
+ height: 50px;
+ line-height: 50px;
+ border-bottom: 1px solid #ddd;
+}
+
+.diplomatic_L .dip_title {
+ text-indent: 32px;
+}
+ 
+.dipSide .viewpoint, .dipSide .recommend {
+ border: 1px solid #ddd;
+}
+
+.dipSide .viewpoint h3, .dipSide .recommend h3 {
+ text-indent: 13px;
+}
+
+.dipSide .viewpoint ul, .dipSide .recommend ul {
+ padding: 10px 0;
+}
+
+.dipSide .viewpoint li {
+ font-size: 13px;
+ height: 30px;
+ line-height: 30px;
+ text-indent: 13px;
+}
+
+.dipSide .recommend {
+ margin-top: 20px;
+}
+
+.dipSide .recommend li {
+ float: left;
+ width: 135px;
+ margin: 0 6px 0 3px;
+ padding-bottom: 20px;
+}
+
+.dipSide .recommend li p {
+ line-height: 18px;
+ padding-top: 7px;
+}
