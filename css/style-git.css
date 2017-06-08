@@ -365,6 +365,7 @@ img {
 }
 
 .footer .copyright {
+    width: 270px;
     font-size: 12px;
     text-align: center;
     padding: 20px 10px;
@@ -373,7 +374,8 @@ img {
 }
 
 .footer .footer-nav {
-    margin: 25px 40px 0 0;
+    width: 440px;
+    margin-top: 25px;
 }
 
 .footer .footer-nav a {
