@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>省皮项目周报</title>
+    <style>
+        :root {
+            --bg-color: #f5f4ee;
+            --card-bg: #faf9f6;
+            --accent-color: #ff8906;
+            --text-color: #212529;
+        }
+
+        body {
+            font-family: 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.75rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .report-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 1.375rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .card-content {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 2rem;
+            grid-column: 1 / -1;
+        }
+
+        .empty-state p {
+            font-size: 1.25rem;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            .report-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>省皮项目周报</h1>
+        <div class="subtitle">2025年7月16日 - 2025年7月23日</div>
+    </div>
+
+    <div class="report-container">
+        <div class="empty-state">
+            <p>本周群聊中没有发现新的聊天记录。</p>
+        </div>
+    </div>
+
+    <script>
+        // 简单的动画效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
+</html>
