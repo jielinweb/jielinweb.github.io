@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南皮室间质评系统沟通周报 (2025-07-16 ~ 2025-07-23)</title>
+    <style>
+        :root {
+            --bg-color: #f5f4ee;
+            --card-bg: #faf9f6;
+            --accent-color: #ff8906;
+            --text-color: #212529;
+        }
+
+        body {
+            font-family: 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card h3 {
+            font-size: 1.375rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .card p {
+            margin: 0.5rem 0;
+            line-height: 1.5;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .timestamp {
+            font-size: 0.875rem;
+            color: #6c757d;
+            margin-bottom: 0.5rem;
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .message:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .sender {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>南皮室间质评系统沟通周报</h1>
+    <p class="timestamp">2025-07-16 ~ 2025-07-23</p>
+
+    <div class="container">
+        <div class="card">
+            <h3>系统访问问题</h3>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:06:20</p>
+                <p><span class="sender">娴哥</span>: 该界面只能看到第一页，其他页无法访问</p>
+                <img src="http:///image/8e6e5d530ecba356881eeb7ac63a6f2e" alt="系统界面截图">
+                <img src="http:///image/6bae0d91d2b6bfca25a39619cce76986" alt="系统界面截图">
+                <img src="http:///image/5efe3fd5099855da967e8a52210c69d3" alt="系统界面截图">
+            </div>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:11:24</p>
+                <p><span class="sender">qxl～</span>: 现在最全的明细表要去哪里看和下载呢？</p>
+            </div>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:18:51</p>
+                <p><span class="sender">qxl～</span>: 好的，这个明细界面只能看第一页，点第二页就报错了，看看怎么回事</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>技术支持响应</h3>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:06:47</p>
+                <p><span class="sender">广州悦腾-钱征</span>: 我看看</p>
+            </div>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:13:32</p>
+                <p><span class="sender">广州悦腾-钱征</span>: 稍等</p>
+            </div>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:18:59</p>
+                <p><span class="sender">广州悦腾-钱征</span>: 嗯 好的</p>
+            </div>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:20:14</p>
+                <p><span class="sender">广州悦腾-钱征</span>: 嗯 好</p>
+            </div>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:20:18</p>
+                <p><span class="sender">广州悦腾-钱征</span>: 我记录一下</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>数据展示问题</h3>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:19:41</p>
+                <p><span class="sender">qxl～</span>: 下面的图形成了这几个大数字</p>
+            </div>
+            <div class="message">
+                <p class="timestamp">2025-07-22 17:20:04</p>
+                <p><span class="sender">qxl～</span>: <img src="http:///image/6bae0d91d2b6bfca25a39619cce76986" alt="数据展示截图"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple animation for cards on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
