@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南皮室间质评系统沟通周报 (2025-07-16 ~ 2025-07-23)</title>
+    <style>
+        :root {
+            --bg-color: #f5f4ee;
+            --card-bg: #faf9f6;
+            --accent-color: #ff8906;
+            --text-color: #212529;
+        }
+
+        body {
+            font-family: 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.375rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-content {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .timestamp {
+            font-size: 0.875rem;
+            color: #6c757d;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>南皮室间质评系统沟通周报</h1>
+    <p class="timestamp">2025-07-16 ~ 2025-07-23</p>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3>系统界面访问问题</h3>
+            </div>
+            <div class="card-content">
+                <p><span class="highlight">娴哥</span> 反馈系统界面只能看到第一页，其他页无法访问。</p>
+                <p><span class="highlight">qxl～</span> 补充说明点第二页会报错，并询问最全的明细表查看和下载位置。</p>
+                <p class="timestamp">2025-07-22 17:06 ~ 17:20</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>问题跟进</h3>
+            </div>
+            <div class="card-content">
+                <p><span class="highlight">广州悦腾-钱征</span> 表示会查看问题并记录。</p>
+                <p class="timestamp">2025-07-22 17:06 ~ 17:20</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple animation for cards on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
+</html>
