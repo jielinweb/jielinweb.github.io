@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南皮室间质评系统沟通周报 (2025-07-16 ~ 2025-07-23)</title>
+    <style>
+        :root {
+            --bg-color: #f5f4ee;
+            --card-bg: #faf9f6;
+            --accent-color: #ff8906;
+            --text-color: #212529;
+            --font-main: 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3 {
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        h1 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        h3 {
+            font-size: 1.375rem;
+            margin: 1rem 0 0.5rem;
+        }
+        
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+        }
+        
+        .card-large {
+            grid-column: span 2;
+        }
+        
+        .card-small {
+            grid-column: span 1;
+        }
+        
+        .message {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .message:last-child {
+            border-bottom: none;
+        }
+        
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+        
+        .message-content {
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-large, .card-small {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>南皮室间质评系统沟通周报</h1>
+    <p>2025-07-16 ~ 2025-07-23</p>
+    
+    <div class="bento-grid">
+        <div class="card card-large">
+            <h2>本周主要问题</h2>
+            <div class="message">
+                <div class="message-header">
+                    <span>娴哥</span>
+                    <span>07-22 17:06</span>
+                </div>
+                <div class="message-content">
+                    该界面只能看到第一页，其他页无法访问
+                </div>
+            </div>
+            
+            <div class="message">
+                <div class="message-header">
+                    <span>qxl～</span>
+                    <span>07-22 17:18</span>
+                </div>
+                <div class="message-content">
+                    这个明细界面只能看第一页，点第二页就报错了
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-small">
+            <h3>问题截图</h3>
+            <p>多位成员提供了问题截图</p>
+        </div>
+        
+        <div class="card card-small">
+            <h3>跟进状态</h3>
+            <p>广州悦腾-钱征已记录问题并跟进</p>
+        </div>
+    </div>
+    
+    <div class="bento-grid">
+        <div class="card">
+            <h3>其他讨论</h3>
+            <div class="message">
+                <div class="message-header">
+                    <span>qxl～</span>
+                    <span>07-22 17:11</span>
+                </div>
+                <div class="message-content">
+                    现在最全的明细表要去哪里看和下载呢？
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 简单的卡片动画效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
+</html>
